@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>Vítejte ve vesmíru</h1>
+        <div class="logo">🌌 Vesmírný portál</div>
         <nav>
             <a href="index.html" class="active">Domů</a>
             <a href="galerie.html">Galerie</a>
@@ -16,16 +16,38 @@
         </nav>
     </header>
 
-    <main>
+    <main class="home-main">
+        <!-- Hero sekce (Hlavní úvod) -->
         <section class="hero">
-            <h2>Objevujte tajemství kosmu</h2>
-            <p>Vesmír je obrovský, neprozkoumaný a plný tajemství. Pojďte s námi nahlédnout do tajů galaxií, hvězd a planet.</p>
-            <img src="vesmir-uvod.jpg" alt="Pohled na galaxii" class="main-img">
+            <div class="hero-content">
+                <h2>Objevujte tajemství kosmu</h2>
+                <p>Vesmír je obrovský, neprozkoumaný a plný fascinujících tajemství. Pojďte s námi nahlédnout do hlubokých galaxií, vzdálených hvězd a planetárních soustav.</p>
+                <a href="galerie.html" class="btn-primary">Prozkoumat galerii</a>
+            </div>
+            <div class="hero-image">
+                <img src="vesmir-uvod.jpg" alt="Pohled na hluboký vesmír a galaxii" class="main-img">
+            </div>
+        </section>
+
+        <!-- Sekce s informačními kartami -->
+        <section class="features">
+            <div class="feature-card">
+                <h3>🪐 Planety</h3>
+                <p>Poznejte detailně světy naší sluneční soustavy i vzdálené exoplanety.</p>
+            </div>
+            <div class="feature-card">
+                <h3>✨ Mlhoviny</h3>
+                <p>Zasněte se nad barevnými oblaky prachu a zrodu nových hvězd.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🚀 Budoucnost</h3>
+                <p>Sledujte nejnovější mise, rakety a vědecké objevy v kosmonautice.</p>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Vesmírný portál</p>
+        <p>&copy; 2026 Vesmírný portál | Vytvořeno s vášní pro vesmír</p>
     </footer>
 </body>
 </html>
