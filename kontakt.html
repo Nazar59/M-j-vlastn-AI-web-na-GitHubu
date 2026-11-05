@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vesmírný portál - Kontakt</title>
+    <title>Vesmírný portál - Kontakt a Zdroje</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Kontakt a Zdroje</h1>
+        <h1>Vesmírný portál</h1>
         <nav>
             <a href="index.html">Domů</a>
             <a href="galerie.html">Galerie</a>
@@ -16,26 +16,52 @@
         </nav>
     </header>
 
-    <main>
-        <h2>Napište nám</h2>
-        <p>Máte dotazy k vesmíru? Ozvěte se nám na email: <strong>info@vesmirny-portal.cz</strong></p>
-        
-        <hr style="border: 0; border-top: 1px solid #30363d; margin: 40px 0;">
+    <main class="contact-main">
+        <h2>Spojte se s námi</h2>
+        <p class="subtitle">Máte otázky k vesmíru, připomínky k webu nebo nám chcete poslat úžasný snímek? Napište nám!</p>
 
-        <section style="text-align: left;">
-            <h3>Zdroje a citace AI</h3>
-            <p><strong>Použitá AI:</strong> Gemini (Google)</p>
-            <p><strong>Hlavní prompty (příkazy) použité při tvorbě:</strong></p>
-            <ul>
-                <li><em>"Napiš mi moderní tmavou strukturu pro HTML web o vesmíru rozdělenou do 3 stránek (index, galerie, kontakt) s propojeným CSS."</em></li>
-                <li><em>"Jak správně stylovat obrázky v CSS, aby vypadaly moderně a měly zaoblené rohy?"</em></li>
-            </ul>
-            <p><strong>Externí zdroje:</strong> Obrázky staženy z volně dostupných databank (Unsplash/Pixabay).</p>
+        <div class="contact-grid">
+            <!-- Formulář -->
+            <section class="contact-form-box">
+                <h3>Napište nám zprávu</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="jmeno">Vaše jméno:</label>
+                        <input type="text" id="jmeno" name="jmeno" placeholder="Zadejte jméno" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Váš email:</label>
+                        <input type="email" id="email" name="email" placeholder="vas@email.cz" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="zprava">Zpráva:</label>
+                        <textarea id="zprava" name="zprava" rows="4" placeholder="Napište svou zprávu..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Odeslat zprávu</button>
+                </form>
+            </section>
+
+            <!-- Kontaktní údaje -->
+            <section class="contact-info-box">
+                <h3>Kde nás najdete</h3>
+                <p><strong>Email:</strong> info@vesmirny-portal.cz</p>
+                <p><strong>Telefon:</strong> +420 123 456 789</p>
+                <p><strong>Adresa:</strong> Hvězdárenská 42, Praha</p>
+            </section>
+        </div>
+
+        <hr class="section-divider">
+
+        <!-- Povinná sekce: Zdroje a citace AI -->
+        <section class="ai-citation-box">
+            <h3>🤖 Zdroje a citace AI</h3>
+            <p><strong>Použitá umělá inteligence:</strong> Gemini (Google)</p>
+            <p><strong>Externí zdroje:</strong> Obrázky byly staženy z volně dostupných databank (Unsplash/Pixabay) a upraveny pro účely školního projektu.</p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Vesmírný portál</p>
+        <p>&copy; 2026 Vesmírný portál | Vytvořeno s pomocí AI</p>
     </footer>
 </body>
 </html>
